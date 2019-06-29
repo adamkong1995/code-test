@@ -1,3 +1,46 @@
 .comp-switch {
   display: block;
 }
+
+/* Enabled and not Checked */
+.toggle_button {
+  background-color: #acabab;
+  border-radius: 15px;
+  height: 30px;
+  width: 60px;
+  position: relative;
+  outline: none;
+  transition: .6s;
+  -webkit-appearance: none;
+}
+
+.toggle_button:before {
+  background-color: #ffffff;
+  border-radius: 15px;
+  content: '';
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  transition: 0.6s;
+  top: 2px;
+  left: 2px;
+}
+
+/* Enabled and Checked */
+.toggle_button:checked {
+  background-color: #69bff0;
+}
+
+.toggle_button:checked:before {
+  left: 32px;
+}
+
+/* Disabled */
+.toggle_button:disabled {
+  background-color: #d6d6d657;
+}
+
+.toggle_button:disabled:before {
+  position: absolute;
+  background-color: #acabab;
+}

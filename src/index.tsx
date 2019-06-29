@@ -14,6 +14,7 @@ class App extends React.PureComponent<{}, State> {
         isSwitchChecked: false,
         isSwitchDisabled: false,
         isSwitchUncontrolled: false,
+
     };
 
     onToggleDisable = () => this.setState({isSwitchDisabled: !this.state.isSwitchDisabled});

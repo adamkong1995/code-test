@@ -2,19 +2,34 @@
   display: block;
 }
 
-/* Enabled and not Checked */
-.toggle_button {
+/* Background */
+/* Not Checked */
+input {
   background-color: #acabab;
   border-radius: 15px;
   height: 30px;
   width: 60px;
   position: relative;
   outline: none;
-  transition: .6s;
+  transition: 0.6s;
   -webkit-appearance: none;
 }
 
-.toggle_button:before {
+/* Checked */
+input:checked {
+  background-color: #69bff0;
+}
+
+/* Disabled */
+input:disabled {
+  background-color: #d6d6d657;
+}
+
+
+
+/* Switch */
+/* Not Checked */
+input:before {
   background-color: #ffffff;
   border-radius: 15px;
   content: '';
@@ -26,21 +41,13 @@
   left: 2px;
 }
 
-/* Enabled and Checked */
-.toggle_button:checked {
-  background-color: #69bff0;
-}
-
-.toggle_button:checked:before {
-  left: 32px;
+/* Checked */
+input:checked:before {
+  transform: translateX(30px);
 }
 
 /* Disabled */
-.toggle_button:disabled {
-  background-color: #d6d6d657;
-}
-
-.toggle_button:disabled:before {
+input:disabled:before {
   position: absolute;
   background-color: #acabab;
 }

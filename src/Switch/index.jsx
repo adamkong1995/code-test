@@ -8,12 +8,10 @@ export default class Switch extends React.PureComponent {
         return (
             <div className="comp-switch">
                 <input 
-                    className='toggle_button'
-                    type='checkbox'
                     disabled={this.props.disabled}
                     onClick={this.onClick} 
+                    type='checkbox'
                 />
-                <span className='slider'></span>
             </div>
         );
     };

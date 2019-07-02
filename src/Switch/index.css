@@ -3,6 +3,7 @@
 }
 
 /* Background */
+
 /* Not Checked */
 input {
   background-color: #acabab;
@@ -25,14 +26,13 @@ input:disabled {
   background-color: #d6d6d657;
 }
 
-
-
 /* Switch */
+
 /* Not Checked */
-input:before {
-  background-color: #ffffff;
+input::before {
+  background-color: #fff;
   border-radius: 15px;
-  content: '';
+  content: "";
   height: 26px;
   width: 26px;
   position: absolute;
@@ -42,12 +42,12 @@ input:before {
 }
 
 /* Checked */
-input:checked:before {
+input:checked::before {
   transform: translateX(30px);
 }
 
 /* Disabled */
-input:disabled:before {
+input:disabled::before {
   position: absolute;
   background-color: #acabab;
 }

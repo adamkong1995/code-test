@@ -25,6 +25,7 @@ function checkPrettier() {
     "--list-different",
     "src/**/*.{ts,tsx,js,jsx,css}"
   ]);
+  // spawn("prettier", ["--config", "./prettier.json", "--write", "src/**/*.{ts,tsx,js,jsx,css}"])
 }
 
 function checkTypeScript() {
